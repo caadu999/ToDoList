@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(196, 196, 196);
+  padding: 8px 16px;
+  font-weight: 600;
+  width: 140px;
+  height: 80px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: background-color 0.2s ease-in;
+  color: rgb(43, 43, 43);
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(143, 143, 143);
+  }
+}

@@ -1,0 +1,31 @@
+@use '../mixins/mixins';
+
+
+.form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 12px 16px;
+  gap: 10px;
+
+  input {
+    padding: 8px;
+    text-indent: 12px;
+    border-radius: 8px;
+    border: solid 1px grey;
+    width: 400px;
+    font-size: 1em;
+    transition: box-shadow 0.2s ease-in;
+
+    &:focus {
+      outline: none;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: solid 1px rgb(29, 29, 29);
+    }
+  }
+
+  button {
+    @include mixins.button;
+}
+}
