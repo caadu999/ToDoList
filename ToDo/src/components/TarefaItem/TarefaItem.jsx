@@ -11,7 +11,7 @@ export function TarefaItem({ tarefa, handleRemove, handleConcluir }) {
           onChange={() => handleConcluir(tarefa.id)}
         />
         <p
-          style={{ textDecoration: tarefa.concluida ? "line-through" : "none" }}
+          style={{ textDecoration: tarefa.concluida ? "line-through" : "none", color: tarefa.concluida ? "grey" : "black" }}
         >
           {tarefa.texto}
         </p>
